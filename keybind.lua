@@ -5,6 +5,7 @@ local LocalPlayer = Players.LocalPlayer
 local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
 local HumanoidRootPart = Character:WaitForChild("HumanoidRootPart")
 local Mouse = LocalPlayer:GetMouse()
+local RunService = game:GetService("RunService")
 
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
     if gameProcessed then return end
